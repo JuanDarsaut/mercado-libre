@@ -1,0 +1,20 @@
+<nav class="nav-bar">
+  <h2 routerLink="item">Mercado Libre</h2>
+
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Buscar..." />
+    <button id="search-button">Buscar</button>
+  </div>
+
+  <div class="user-icon" alt="icono de usuario">
+    <!---<img [src]="userIcon.img" alt="photo" />  --->
+  </div>
+  <button id="deslogin-btn" class="deslogin-btn" (click)="botonLogin()">Cerrar Sesión</button>
+  <button id="carrito-btn" class="carrito-btn" (click)="botonCarrito()">Carrito</button>
+</nav>
+
+<div class="container-items">
+  <app-item *ngFor="let item of items" [item]="item"></app-item>
+</div>
+
+<router-outlet></router-outlet>

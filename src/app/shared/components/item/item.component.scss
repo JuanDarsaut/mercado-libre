@@ -1,0 +1,15 @@
+.item {
+  width: 300px;
+  border-radius: 16px;
+  margin: 5px;
+  &__img {
+    width: 200px;
+  }
+  &__btn {
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #155ecc;
+    color: white;
+    cursor: pointer;
+  }
+}
